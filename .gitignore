@@ -164,3 +164,9 @@ cython_debug/
 old/
 .vscode/
 .DS_Store
+
+
+# Personal ignores
+*.zip
+*.csv
+*.cache
