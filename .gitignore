@@ -170,3 +170,5 @@ old/
 *.zip
 *.csv
 *.cache
+dataset/*
+logs
