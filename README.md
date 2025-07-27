@@ -47,9 +47,9 @@ pip install -r requirements.txt
 
 ---
 
-MLFlow
+Запуск MLFlow :
 
-TODO
+`mlflow server --backend-store-uri sqlite:///mlruns.db`
 
 ---
 

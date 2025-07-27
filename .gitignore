@@ -173,3 +173,5 @@ old/
 dataset/*
 logs
 *.pkl
+*.db
+mlartifacts
