@@ -172,3 +172,4 @@ old/
 *.cache
 dataset/*
 logs
+*.pkl
