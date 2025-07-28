@@ -148,4 +148,7 @@ docker container run --publish 4600:1702 --env-file .env spain_bank_ml_webservic
 
 Мониторинг, описание метрик.
 
-TODO
+Мониторим:
+- время обработки запроса (`rate(http_request_duration_seconds_count[1m])`);
+- общее кол-во предсказаний (`main_app_predictions`);
+- кол-во положительных предсказаний (`positive_predictions_counter`).

@@ -1,0 +1,29 @@
+services:
+  # название сервиса 
+  main-app:
+    # указываем путь к .env файлу с переменными окружения
+    env_file:
+      - ./.env
+    
+    # указываем способ, которым собираем образ — в нашем случае с помощью Dockerfile
+    build:
+      dockerfile: Dockerfile
+    
+    # перенаправляем порты
+    # используем переменные из .env файла
+    ports:
+      #- "${COUNTER_APP_PORT_VM}:${COUNTER_APP_PORT}"
+      - "4600:1702"
+
+    hostname: fastapi_app
+
+  prometheus:
+    image: prom/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - 9090:9090
+    volumes:
+      - "./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
+    hostname: prometheus 
+    
