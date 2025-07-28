@@ -4,3 +4,4 @@ matplotlib
 scikit-learn
 mlflow
 python-dotenv
+fastapi
