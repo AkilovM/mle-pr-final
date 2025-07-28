@@ -92,9 +92,24 @@ cd app
 uvicorn main:app --reload
 ```
 
+Собрать образ:
+
+```
+cp prod_obj.pkl docker_webservice/
+cp model_baseline_LogReg.pkl docker_webservice/
+cd docker_webservice
+docker image build . --tag spain_bank_ml_webservice:0
+```
+
+Запустить контейнер с веб-сервисом:
+
+```
+docker container run --publish 4600:1702 --env-file .env spain_bank_ml_webservice:0
+```
+
 Пример запроса для предсказания:
 
-`http://ip:port/api/predict_products/657790`
+`http://IP:4600/api/predict_products/657790`
 
 Пример вывода:
 
