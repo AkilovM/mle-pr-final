@@ -32,6 +32,8 @@ pip install "uvicorn[standard]"
 
 Проводим разведочный анализ данных в ноутбуке `Exploratory_Data_Analysis.ipynb`.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AkilovM/mle-pr-final/blob/main/Exploratory_Data_Analysis.ipynb)
+
 ---
 
 Установка Airflow :
@@ -80,6 +82,8 @@ pip install "uvicorn[standard]"
 ---
 
 Эксперименты в ноутбуке `experiments.ipynb`
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AkilovM/mle-pr-final/blob/main/experiments.ipynb)
 
 ---
 
